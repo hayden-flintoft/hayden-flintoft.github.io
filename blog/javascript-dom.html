@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Captain's blog - JS Fundamentals</title>
+    <!-- <base href="https://hayden-flintoft.github.io/" /> -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Captain's bLog" />
+    <meta name="author" content="Hayden Flintoft" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Captain's <span style="color: red">B</span>log</h1>
+    </header>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../blog/te-houtaewa-template.html">te-houtaewa</a>
+      <a href="../blog/html-css.html">The CSS Box Model</a>
+      <a href="../blog/identity-values.html">Identity, Values, and Strengths Exploration</a>
+      <a href="../blog/learning-plan.html">My Learning Plan</a>
+      <a class="active" href="../blog/javascript-dom.html">JavaScript Fundamentals</a>
+    </nav>
+    <header id="blog">
+      <h2>Javascript Fundamentals</h2>
+      <h3>What is the deal with JavaScript?</h3>
+      <p>2024-06-28</p>
+    </header>
+    <article>
+      <div class="blog-post">
+        <h4>Think of a web application as a house</h4>
+        <ul>
+          <li><strong>HTML</strong> is the structure of the house, forming the walls, floors, and roof.</li>
+          <li><strong>CSS</strong> CSS is the paint, wallpaper, and decorations that make the house look appealing.</li>
+          <li><strong>JavaScript</strong> is everything functional, like the power, plumbing, and door locks.</li>
+        </ul>
+        <h4>Let's compare a specific function for a website to its real-world analogue:</h4>
+        <p>Suppose a website has a field to enter your email and a button to send your email address to the server.</p>
+        <ol>
+          <li>The input field, label, and button are created with <strong>HTML</strong></li>
+          <li>They are then styled to look nice using <strong>CSS</strong></li>
+          <li>When you click the button, <strong>JavaScript</strong> takes your email address, sends it to the server, and displays a confirmation message. This message is displayed by editing some HTML on the form and styled with CSS</li>
+        </ol>
+        <p>Now, consider your house:</p>
+        <ol>
+          <li>The wall would be an HTML element, painted with CSS</li>
+          <li>The light switch would be the button</li>
+          <li>When you flick the switch, a light turns on by completing a circuit and sending power to the bulb. This is analogous to JavaScript sending a message to the bulb to turn on</li>
+          <li>The bulb turning on then lights up the wall, changing its appearance. This change is the JavaScript feedback, making the wall look brighter</li>
+        </ol>
+        <h4>Control Flows</h4>
+        <p>Control flow in programming is like the sequence of steps you take to perform tasks in your house.</p>
+        <h5>Example: Making Breakfast</h5>
+        <p>In the following example we see the process of making breakfast as a control flow diagram. You can see logic like "Is there milk in the fridge?" and branches based on conditions in the diamonds.</p>
+        <img class="blog-post" src="../images/control-flow-breakfast.png" alt="Control flow diagram for making breakfast" />
+        <h4>Loops</h4>
+        <p>Loops are like repeating tasks in your house. For example, you might vacuum the floor in a loop, moving from one room to the next until you have cleaned the whole house.</p>
+        <p>In the below example, you enter the loop at "For each room in the house". YOu enter the condition check, are there any rooms to clean? You then move to that room and clean it before returning and checking if any more rooms need to be cleaned.</p>
+        <p>In this example we can see a nested loop where we continue to clean a room until its clean.</p>
+        <p>So this example shows both a "For each" loop and a "Do while loop".</p>
+        <img class="blog-post" src="../images/loop-example.png" alt="Loop example for cleaning a house" />
+        <h4>The DOM</h4>
+        <p>The Document Object Model (DOM) is a representation of the structure of a webpage. It is a tree-like structure where each element is a node.</p>
+        <p>When you interact with a webpage, you are interacting with the DOM. For example, when you type into an input field, you are changing the value of a node in the DOM.</p>
+        <p>JavaScript can be used to manipulate the DOM, changing the structure of the webpage. For example, you could add a new element to the page, or change the text of an existing element.</p>
+        <p>The part of the DOM you would typically see are the innerHTML part of a node.</p>
+        <h4>Arrays & Objects</h4>
+        <p>Arrays and objects are two fundamental data structures in JavaScript, and they have different ways of storing and accessing data.</p>
+        <h5>Arrays</h5>
+        <p>Arrays are ordered collections of objects. An array can contain different kinds of objects and values. An array can be written to or read from using an index where 0 is the first object and 10 would be the 11th object.</p>
+        <p>When we create an array we write it like this:</p>
+        <code>let myArray[]</code>
+        <p>When we add an object to the array we write it like this:</p>
+        <code>myArray[0] = "Hello"</code>
+        <p>Now the first value of the array is the string value "Hello".</p>
+        <p>To read that value we can refer to the index</p>
+        <code>console.log(myArray[0])</code>
+        <p>And the console will log "Hello".</p>
+        <p>We can also use pop and push to add and remove objects in the array:</p>
+        <code>myArray.push("World")</code>
+        <p>Now the array has two values, "Hello" and "World".</p>
+        <code>console.log(myArray.pop())</code>
+        <p>Now the array has removed and written to console the last item; "World"</p>
+        <h5>Objects</h5>
+        <p>Objects are collections of key-value pairs. Each key is a string, and each value can be any type of object or value. Objects are unordered, so you can't access them by index like you can with arrays.</p>
+        <p>When we create an object we write it like this:</p>
+        <code>let myObject = {}</code>
+        <p>When we add a key-value pair to the object we write it like this:</p>
+        <code>myObject["key"] = "value"</code>
+        <p>Now the object has a key "key" with the value "value".</p>
+        <p>To read that value we can refer to the key</p>
+        <code>console.log(myObject["key"])</code>
+        <p>And the console will log "value".</p>
+        <p>Objects can also be made using blueprints which we call classes.</p>
+        <p>Classes contain blueprints for creating object with properties and their own self-contained functions.</p>
+        <p>This is how Object-Orientated-Programming works.</p>
+        <h4>Functions</h4>
+        <p>Functions are like the tools you use to perform tasks in your house. They are reusable blocks of code that can be called with different inputs to perform different tasks.</p>
+        <p>Functions can be written to take inputs and return outputs. They can also be written to perform tasks without returning anything.</p>
+        <p>They are good for reusable code that would otherwise require rewriting and updating. Instead of rewriting the same block of code each time, you can just call it.</p>
+        <p>Functions are important for using DRY (Don''t Repeat Yourself) principles.</p>
+        <p>Functions can be written like this:</p>
+        <code>function myFunction(){</code>
+        <code> console.log("Hello World")</code>
+        <code>}</code>
+        <p>And then called like this:</p>
+        <code>myFunction()</code>
+        <p>And the console will log "Hello World".</p>
+      </div>
+    </article>
+
+    <footer>
+      <p>&copy; 2024 Hayden Flintoft - except images from Bing Copilot, DALL·E, placehold.co, picsum, and W3 School.</p>
+    </footer>
+  </body>
+</html>
