@@ -152,6 +152,15 @@ article div.scroll-container img {
   width: 50%;
 }
 
+code {
+  background-color: #000000;
+  border: 1px solid #d3d3d3;
+  color: #00ff40;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 /* widescreen displays */
 @media only screen and (min-width: 920px) {
