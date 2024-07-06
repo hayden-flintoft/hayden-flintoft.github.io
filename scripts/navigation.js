@@ -1,5 +1,5 @@
 function includeRootNav() {
-  fetch('https://hayden-flintoft.github.io/templates/nav-root.html')
+  fetch('templates/nav-root.html')
     .then((response) => response.text())
     .then((data) => {
       document.getElementById('nav').innerHTML = data
