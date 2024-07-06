@@ -14,14 +14,7 @@
       <h1>Captain's <span style="color: red">B</span>log</h1>
     </header>
     <nav id="nav" class="topnav">
-      <a id="home-link" href="../index.html">Home</a>
-      <a id="te-houtaewa-link" href="../blog/te-houtaewa-template.html">te-houtaewa</a>
-      <a id="html-css-link" href="../blog/html-css.html">The CSS Box Model</a>
-      <a id="identity-link" href="../blog/identity-values.html">Identity, Values, and Strengths Exploration</a>
-      <a id="learning-plan-link" href="../blog/learning-plan.html">My Learning Plan</a>
-      <a id="javascript-dom-link" href="../blog/javascript-dom.html">JavaScript Fundamentals</a>
-      <a class="active" id="emotional-intelligence-link" href="../blog/emotional-intelligence.html">Emotional Intelligence</a>
-      <a id="problem-solving-link" href="../blog/problem-solving.html">Problem Solving</a>
+      <!-- Navigation links will be loaded here -->
     </nav>
     <header id="blog">
       <h2>Emotional Intelligence</h2>
@@ -121,5 +114,11 @@
     <footer>
       <p>&copy; 2024 Hayden Flintoft - except images from Bing Copilot, DALL·E, placehold.co, picsum, and W3 School.</p>
     </footer>
+    <script src="../scripts/navigation.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        includeChildNav()
+      })
+    </script>
   </body>
 </html>
