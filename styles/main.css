@@ -43,6 +43,11 @@ p {
   line-height: 1.6;
 }
 
+.reflection {
+  color: rgb(0, 18, 150);
+  font-style: italic;
+}
+
 .update {
   color: rgb(164, 0, 0);
   font-style: italic;
