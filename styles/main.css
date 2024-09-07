@@ -43,6 +43,11 @@ p {
   line-height: 1.6;
 }
 
+.update {
+  color: rgb(164, 0, 0);
+  font-style: italic;
+}
+
 header#blog h2 {
   color: var(--secondary-color);
 }
